@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productes - SportStyle</title>
+    <link rel="stylesheet" href="global.css">
+    <style>
+        .filtres {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 25px 0;
+        }
+        .filtres a {
+            display: inline-block;
+            background: #d9f3e5;
+            color: #126b42;
+            padding: 8px 14px;
+            border-radius: 18px;
+        }
+        .productes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .producte {
+            flex: 1 1 260px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 18px;
+        }
+        .imatge-ficticia {
+            height: 170px;
+            background: #e5e5e5;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+        }
+        .preu { color: #168653; font-weight: bold; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <header class="menu">
+        <a class="logo" href="index.html">SportStyle</a>
+        <nav>
+            <a href="index.html">Inici</a>
+            <a href="productes.html">Productes</a>
+            <a href="contacte.html">Contacte</a>
+        </nav>
+    </header>
+
+    <main class="contenidor">
+        <h1>Els nostres productes</h1>
+        <p>Tria la roba esportiva que més t'agradi.</p>
+
+        <div class="filtres">
+            <a href="#samarreta">Samarretes</a>
+            <a href="#pantalons">Pantalons</a>
+            <a href="#sabatilles">Sabatilles</a>
+        </div>
+
+        <section class="productes">
+            <article class="producte" id="samarreta">
+                <div class="imatge-ficticia">👕</div>
+                <h2>Samarreta esportiva</h2>
+                <p>Samarreta lleugera per entrenar.</p>
+                <p class="preu">19,99 €</p>
+            </article>
+            <article class="producte" id="pantalons">
+                <div class="imatge-ficticia">🩳</div>
+                <h2>Pantalons curts</h2>
+                <p>Pantalons còmodes per fer esport.</p>
+                <p class="preu">24,99 €</p>
+            </article>
+            <article class="producte" id="sabatilles">
+                <div class="imatge-ficticia">👟</div>
+                <h2>Sabatilles esportives</h2>
+                <p>Per caminar o sortir a córrer.</p>
+                <p class="preu">49,99 €</p>
+            </article>
+            <article class="producte">
+                <div class="imatge-ficticia">🧥</div>
+                <h2>Dessuadora</h2>
+                <p>Ideal per escalfar abans d'entrenar.</p>
+                <p class="preu">34,99 €</p>
+            </article>
+            <article class="producte">
+                <div class="imatge-ficticia">🧦</div>
+                <h2>Mitjons esportius</h2>
+                <p>Un extra de comoditat per als peus.</p>
+                <p class="preu">8,99 €</p>
+            </article>
+            <article class="producte">
+                <div class="imatge-ficticia">🎒</div>
+                <h2>Motxilla</h2>
+                <p>Porta tot el que necessites al gimnàs.</p>
+                <p class="preu">29,99 €</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="peu">
+        <p>© 2026 SportStyle · info@sportstyle.cat · Instagram: @sportstyle</p>
+    </footer>
+</body>
+</html>

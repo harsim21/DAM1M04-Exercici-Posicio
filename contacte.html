@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte - SportStyle</title>
+    <link rel="stylesheet" href="global.css">
+    <style>
+        .contacte-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .formulari, .info-contacte {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 22px;
+        }
+        .formulari label { display: block; margin-top: 12px; }
+        .formulari input, .formulari textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            font: inherit;
+        }
+        .formulari button {
+            margin-top: 15px;
+            background: #168653;
+            color: white;
+            border: 0;
+            padding: 11px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .mapa {
+            height: 180px;
+            margin-top: 18px;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 8px;
+            color: #444;
+        }
+        @media (max-width: 700px) {
+            .contacte-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header class="menu">
+        <a class="logo" href="index.html">SportStyle</a>
+        <nav>
+            <a href="index.html">Inici</a>
+            <a href="productes.html">Productes</a>
+            <a href="contacte.html">Contacte</a>
+        </nav>
+    </header>
+
+    <main class="contenidor">
+        <h1>Contacta amb nosaltres</h1>
+        <p>Si tens algun dubte, escriu-nos.</p>
+
+        <section class="contacte-grid">
+            <form class="formulari" action="#" method="post">
+                <h2>Envia'ns un missatge</h2>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Correu electrònic</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="missatge">Missatge</label>
+                <textarea id="missatge" name="missatge" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <aside class="info-contacte">
+                <h2>Informació de contacte</h2>
+                <p><strong>Adreça:</strong> Carrer Major, 10, Barcelona</p>
+                <p><strong>Horari:</strong> Dilluns a dissabte, de 10 a 20 h</p>
+                <p><strong>Telèfon:</strong> 600 123 456</p>
+                <p><strong>Email:</strong> info@sportstyle.cat</p>
+                <div class="mapa">Mapa fictici<br>Barcelona</div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="peu">
+        <p>© 2026 SportStyle · info@sportstyle.cat · Instagram: @sportstyle</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/* Estils comuns de tota la web */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f8f7;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Menú fix a la part superior */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 60px;
+    background: #173d2d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 5%;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 1.35em;
+    font-weight: bold;
+}
+
+.menu nav {
+    display: flex;
+    gap: 18px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu nav a:hover {
+    color: #a8e6c5;
+}
+
+/* Contingut centrat */
+.contenidor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: 75px;
+    min-height: 65vh;
+}
+
+h1, h2, h3 {
+    line-height: 1.25;
+}
+
+/* Peu comú a les tres pàgines */
+.peu {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background: #173d2d;
+    color: white;
+}
+
+.peu p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .menu nav {
+        gap: 12px;
+    }
+
+    .contenidor {
+        margin-top: 110px;
+        padding: 16px;
+    }
+}

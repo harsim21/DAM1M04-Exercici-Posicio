@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inici - SportStyle</title>
+    <link rel="stylesheet" href="global.css">
+    <style>
+        .hero {
+            background: #e7f5ee;
+            text-align: center;
+            padding: 65px 25px;
+            border-radius: 12px;
+        }
+        .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .hero p { font-size: 1.1em; }
+        .boto {
+            background: #168653;
+            color: white;
+            border: 0;
+            padding: 12px 22px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .colleccions {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .carta {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 22px;
+        }
+        .etiqueta {
+            display: inline-block;
+            background: #d9f3e5;
+            color: #126b42;
+            padding: 5px 9px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-right: 5px;
+        }
+        .beneficis {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            background: #173d2d;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 700px) {
+            .colleccions { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2em; }
+        }
+    </style>
+</head>
+<body>
+    <header class="menu">
+        <a class="logo" href="index.html">SportStyle</a>
+        <nav>
+            <a href="index.html">Inici</a>
+            <a href="productes.html">Productes</a>
+            <a href="contacte.html">Contacte</a>
+        </nav>
+    </header>
+
+    <main class="contenidor">
+        <section class="hero">
+            <h1>Vesteix-te per superar els teus límits</h1>
+            <p>Roba esportiva còmoda per entrenar cada dia.</p>
+            <button class="boto" onclick="location.href='productes.html'">Veure productes</button>
+        </section>
+
+        <h2>Les nostres col·leccions</h2>
+        <section class="colleccions">
+            <article class="carta">
+                <h3>Entrenament</h3>
+                <p>Roba còmoda per anar al gimnàs i fer exercici.</p>
+                <span class="etiqueta">Còmoda</span>
+                <span class="etiqueta">Resistent</span>
+            </article>
+            <article class="carta">
+                <h3>Córrer</h3>
+                <p>Productes lleugers per sortir a córrer.</p>
+                <span class="etiqueta">Lleugera</span>
+                <span class="etiqueta">Transpirable</span>
+            </article>
+            <article class="carta">
+                <h3>Dia a dia</h3>
+                <p>Estil esportiu per vestir còmodament cada dia.</p>
+                <span class="etiqueta">Modern</span>
+                <span class="etiqueta">Versàtil</span>
+            </article>
+        </section>
+
+        <section class="beneficis">
+            <span>🚚 Enviament en 48 h</span>
+            <span>↩ Canvis gratuïts</span>
+            <span>🔒 Pagament segur</span>
+        </section>
+    </main>
+
+    <footer class="peu">
+        <p>© 2026 SportStyle · info@sportstyle.cat · Instagram: @sportstyle</p>
+    </footer>
+</body>
+</html>
